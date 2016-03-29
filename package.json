@@ -1,0 +1,29 @@
+{
+  "name": "ng2-profile",
+  "version": "1.0.0",
+  "description": "Beginner profile app using Angular 2. ",
+  "main": "index.bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "author": "Carlos Filoteo",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.12",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
