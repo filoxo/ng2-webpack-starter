@@ -5,7 +5,13 @@
 </head>
 <body>
   <my-app>Loading...</my-app>
-  <script type="text/javascript" src="dist/vendor.bundle.js"></script>
-  <script type="text/javascript" src="dist/app.bundle.js"></script>
+
+  <!-- Use built files for Production -->
+  <!-- <script src="dist/vendor.bundle.js" type="text/javascript" ></script> -->
+  <!-- <script src="dist/app.bundle.js" type="text/javascript" ></script> -->
+
+  <!-- Use webpack-dev-server (in-memory) files -->
+  <script src="vendor.bundle.js" type="text/javascript" ></script>
+  <script src="app.bundle.js" type="text/javascript" ></script>  
 </body>
 </html>
