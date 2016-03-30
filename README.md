@@ -10,7 +10,11 @@ Then:
 
 - `git clone https://github.com/filoxo/ng2-webpack-starter.git`
 - `npm install`
-- Create more components
+- Keep going with the [Angular 2 Tutorial: Tour of Heroes](https://angular.io/docs/ts/latest/tutorial/)
+
+	or 
+
+	Do your own thing :tada:
 
 ## Step-by-step Manual instructions
 
@@ -26,7 +30,7 @@ There's something to be said about not using boilerplate code without fully unde
 
 - Store project data as npm project (follow prompts):  
 	`npm init`
-	- When prompted for 'entry', specify `index.bundle.js`
+	- When prompted for **entry**, specify `index.bundle.js`
 - Install and save dependencies
     - `npm i angular2@2.0.0-beta.12 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
     - `npm i webpack webpack-dev-server typescript ts-loader typings -D`
