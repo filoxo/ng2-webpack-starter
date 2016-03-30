@@ -9,7 +9,7 @@ Then:
 
 - `git clone https://github.com/filoxo/ng2-webpack-starter.git`
 - `npm install`
-- [Create components](#create-components) (below)
+- Create more components
 
 ### Step-by-step Manual instructions
 
@@ -26,7 +26,7 @@ Then:
     - `npm i angular2@2.0.0-beta.12 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
     - `npm i webpack webpack-dev-server typescript ts-loader typings -D`
 - Create `tsconfig.json` file
-	- This configures the TypeScript compiler. Copy this sample below.
+	- This configures the TypeScript compiler. Copy in the sample code below.
 
 			{
 				"compilerOptions": {
@@ -47,7 +47,7 @@ Then:
 			}
 
 - Create `typings.json` file
-	- This allows us to import TypeScript definition files so that the tscompiler can recognize some third-party libraries.
+	- This allows us to import TypeScript definition files so that the tscompiler can recognize some third-party libraries
 
 			{
 				"ambientDependencies": {
@@ -56,8 +56,8 @@ Then:
 				}
 			}
 
-	- The actual installation of these definition files will be in the `postinstall` npm script below.
-- Edit `package.json` and copy the below code into the `scripts` key of your file.
+	- The actual installation of these definition files will be in the `postinstall` npm script below
+- Edit `package.json` and copy the below code into the `scripts` key of your file
 	
 		"build": "webpack", //
 		"start": "webpack-dev-server",
@@ -65,7 +65,7 @@ Then:
 		"postinstall": "typings install"
 
 - Create `webpack.config.js`
-	- This configures webpack (surprise!). Copy the below code into your file, then read and remove the comments. 
+	- This configures webpack (surprise!). Copy the below code into your file, then read and remove the comments.
 
 			var webpack = require("webpack"); // Import webpack
 			module.exports = {
@@ -116,6 +116,13 @@ Create the first components.
 			})
 			export class AppComponent { }
 
+	- `src/main.ts` 
+
+			import { bootstrap }    from 'angular2/platform/browser';
+			import { AppComponent } from './components/app/app.component.ts';
+
+			bootstrap(AppComponent);
+
 	- `src/vendor/vendor.ts`
 
 			// Polyfills
@@ -134,9 +141,27 @@ Create the first components.
 			// RxJS
 			import 'rxjs';
 
-	- `src/main.ts` 
+### Link to HTML page
 
-			import { bootstrap }    from 'angular2/platform/browser';
-			import { AppComponent } from './components/app/app.component.ts';
+- Create `index.html` in project root
+	- In development, reference files from server root (no directory)
+	- In production, reference built files in `dist/`
 
-			bootstrap(AppComponent);
+			<html>
+			<head>
+			  <title>Ng2 Project</title>
+			  <meta name="viewport" content="width=device-width, initial-scale=1">
+			</head>
+			<body>
+			  <my-app>Loading...</my-app>
+
+			  <!-- Use built files for Production -->
+			  <!-- <script src="dist/vendor.bundle.js" type="text/javascript" ></script> -->
+			  <!-- <script src="dist/app.bundle.js" type="text/javascript" ></script> -->
+
+			  <!-- Use webpack-dev-server (in-memory) files -->
+			  <script src="vendor.bundle.js" type="text/javascript" ></script>
+			  <script src="app.bundle.js" type="text/javascript" ></script>  
+			</body>
+			</html>
+
