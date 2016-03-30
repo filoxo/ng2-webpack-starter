@@ -13,12 +13,16 @@ Then:
 
 ## Step-by-step Manual instructions
 
+There's something to be said about not using boilerplate code without fully understanding what you're getting. Here are the individual steps you need to replicate this project. 
+
 - Make a project directory
 
 	`mkdir ng2-webpack-starter`
+
 - Navigate into the project directory
 
 	`cd ng2-webpack-starter`
+	
 - Store project data as npm project (follow prompts):  
 	`npm init`
 	- When prompted for 'entry', specify `index.bundle.js`
