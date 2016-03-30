@@ -1,7 +1,7 @@
 # ng2-webpack-starter
 Angular2 Starter using Webpack
 
-### Easy install
+## Easy install
 
 **Pre-requisites:** Node must already be installed. 
 
@@ -11,7 +11,7 @@ Then:
 - `npm install`
 - Create more components
 
-### Step-by-step Manual instructions
+## Step-by-step Manual instructions
 
 - Make a project directory
 
@@ -94,7 +94,6 @@ Then:
 
 - Run `npm run postinstall` to get the missing typings
 	- Should create a new `typings/` directory
-- `npm start` to run the webpack-dev-server
 
 ### Create components
 
@@ -145,7 +144,7 @@ Create the first components.
 
 - Create `index.html` in project root
 	- In development, reference files from server root (no directory)
-	- In production, reference built files in `dist/`
+	- In production, reference built files in `dist/`	
 
 			<html>
 			<head>
@@ -165,3 +164,11 @@ Create the first components.
 			</body>
 			</html>
 
+### Run
+
+- `npm start` to run the webpack-dev-server
+- Open your browser to [http://localhost:8080](http://localhost:8080) or [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)
+
+Or 
+
+- `npm run build` to create final asset bundles (inside `dist/`) for production
