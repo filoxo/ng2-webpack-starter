@@ -109,7 +109,7 @@ Create the first components.
 		- `components/` : Component specific code goes here; create a new dir for each component
 			- `app/` : The first component will be the main application
 		- `vendor/` : Third-party libraries will be imported separately 
-- Create the following files. Sample content is taken from the Angular2 Quickstart project.
+- Create the following files. Sample content is taken from the [Angular2 Quickstart](https://angular.io/docs/ts/latest/quickstart.html) project.
 	- `src/components/app/app.component.ts`
 
 			import { Component } from 'angular2/core';
