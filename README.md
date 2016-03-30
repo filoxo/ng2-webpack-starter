@@ -1,5 +1,6 @@
 # ng2-webpack-starter
-Angular2 Starter using Webpack
+
+Angular2 (beta 12) starter using Webpack
 
 ## Easy install
 
@@ -22,7 +23,7 @@ There's something to be said about not using boilerplate code without fully unde
 - Navigate into the project directory
 
 	`cd ng2-webpack-starter`
-	
+
 - Store project data as npm project (follow prompts):  
 	`npm init`
 	- When prompted for 'entry', specify `index.bundle.js`
