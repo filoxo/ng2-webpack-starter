@@ -30,7 +30,8 @@ There's something to be said about not using boilerplate code without fully unde
 
 - Store project data as npm project (follow prompts):  
 	`npm init`
-	- When prompted for **entry**, specify `index.bundle.js`
+	- When prompted for **entry**, specify `dist/index.bundle.js`
+		- Won't be used until you `npm run build` for production
 - Install and save dependencies
     - `npm i angular2@2.0.0-beta.12 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
     - `npm i webpack webpack-dev-server typescript ts-loader typings -D`

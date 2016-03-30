@@ -2,7 +2,7 @@
   "name": "ng2-profile",
   "version": "1.0.0",
   "description": "Beginner profile app using Angular 2. ",
-  "main": "index.bundle.js",
+  "main": "dist/index.bundle.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
