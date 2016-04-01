@@ -1,6 +1,6 @@
 # ng2-webpack-starter
 
-Angular2 (beta 12) starter using Webpack
+Angular2 (beta 13) starter using Webpack
 
 ## Easy install
 
