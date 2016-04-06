@@ -8,7 +8,8 @@ Angular2 (beta 13) starter using Webpack
 
 Then:
 
-- `git clone https://github.com/filoxo/ng2-webpack-starter.git`
+- Fork this repo
+- `git clone https://github.com/<your-username>/ng2-webpack-starter.git`
 - `npm install`
 - Keep going with the [Angular 2 Tutorial: Tour of Heroes](https://angular.io/docs/ts/latest/tutorial/)
 
