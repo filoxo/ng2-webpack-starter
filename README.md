@@ -1,6 +1,6 @@
 # ng2-webpack-starter
 
-Angular2 (beta 13) starter using Webpack
+Angular2 (beta 14) starter using Webpack
 
 ## Easy install
 
@@ -34,7 +34,7 @@ There's something to be said about not using boilerplate code without fully unde
 	- When prompted for **entry**, specify `dist/index.bundle.js`
 		- Won't be used until you `npm run build` for production
 - Install and save dependencies
-    - `npm i angular2@2.0.0-beta.12 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
+    - `npm i angular2@2.0.0-beta.14 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
     - `npm i webpack webpack-dev-server typescript ts-loader typings -D`
 - Create `tsconfig.json` file
 	- This configures the TypeScript compiler. Copy in the sample code below.
@@ -70,7 +70,7 @@ There's something to be said about not using boilerplate code without fully unde
 	- The actual installation of these definition files will be in the `postinstall` npm script below
 - Edit `package.json` and copy the below code into the `scripts` key of your file
 	
-		"build": "webpack", //
+		"build": "webpack",
 		"start": "webpack-dev-server",
 		"typings": "typings",
 		"postinstall": "typings install"
