@@ -1,8 +1,8 @@
 {
-  "name": "ng2-profile",
-  "version": "1.0.0",
-  "description": "Beginner profile app using Angular 2. ",
-  "main": "dist/index.bundle.js",
+  "name": "ng2-webpack-starter",
+  "version": "0.0.3",
+  "description": "Angular2 simple starter using Webpack",
+  "main": "dist/app.bundle.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
@@ -11,13 +11,17 @@
   },
   "author": "Carlos Filoteo",
   "license": "MIT",
+  "repository": { 
+    "type" : "git", 
+    "url" : "https://github.com/filoxo/ng2-webpack-starter.git"
+  },
   "dependencies": {
-    "angular2": "^2.0.0-beta.14",
+    "angular2": "^2.0.0-beta.15",
     "es6-promise": "^3.1.2",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "^5.0.0-beta.2",
-    "zone.js": "0.6.6"
+    "zone.js": "^0.6.10"
   },
   "devDependencies": {
     "ts-loader": "^0.8.1",
