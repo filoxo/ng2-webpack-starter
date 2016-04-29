@@ -63,11 +63,19 @@ There's something to be said about not using boilerplate code without fully unde
 			{
 				"ambientDependencies": {
 					"es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",
-					"jasmine": "registry:dt/jasmine#2.2.0+20160412134438"
+					"jasmine": "registry:dt/jasmine#2.2.0+20160412134438",
+					"webpack": "github:DefinitelyTyped/DefinitelyTyped/webpack/webpack.d.ts#95c02169ba8fa58ac1092422efbd2e3174a206f4"
 				}
 			}
 
 	- The actual installation of these definition files will be in the `postinstall` npm script below
+	- Alternatively, you could install these definitions using the `typings` package. You would not need to create `typings.json`; `typings` will do that. 
+
+			typings install es6-shim jasmine webpack --ambient --save
+
+		NOTE: The typings version of webpack definitions (`"webpack": "registry:dt/webpack#1.12.9+20160321060707"`) throw an error but still allow webpack to work correctly. The DefinitelyTyped version used above does not. 
+
+
 - Edit `package.json` and copy the below code into the `scripts` key of your file
 	
 		"build": "webpack",
