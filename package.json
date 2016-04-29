@@ -11,17 +11,17 @@
   },
   "author": "Carlos Filoteo",
   "license": "MIT",
-  "repository": { 
-    "type" : "git", 
-    "url" : "https://github.com/filoxo/ng2-webpack-starter.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filoxo/ng2-webpack-starter.git"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.15",
+    "angular2": "^2.0.0-beta.17",
     "es6-promise": "^3.1.2",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
-    "rxjs": "^5.0.0-beta.2",
-    "zone.js": "^0.6.10"
+    "rxjs": "^5.0.0-beta.7",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "ts-loader": "^0.8.1",

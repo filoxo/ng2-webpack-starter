@@ -1,6 +1,6 @@
 # ng2-webpack-starter
 
-Angular2 (beta 15) starter using Webpack
+Angular2 (beta 17) starter using Webpack
 
 ## Easy install
 
@@ -34,7 +34,7 @@ There's something to be said about not using boilerplate code without fully unde
 	- When prompted for **entry**, specify `dist/index.bundle.js`
 		- Won't be used until you `npm run build` for production
 - Install and save dependencies
-    - `npm i angular2@2.0.0-beta.15 es6-shim reflect-metadata rxjs@5.0.0-beta.2 zone.js -S`
+    - `npm i angular2@2.0.0-beta.17 es6-shim reflect-metadata rxjs@5.0.0-beta.7 zone.js -S`
     - `npm i webpack webpack-dev-server typescript ts-loader typings -D`
 - Create `tsconfig.json` file
 	- This configures the TypeScript compiler. Copy in the sample code below.
@@ -62,8 +62,8 @@ There's something to be said about not using boilerplate code without fully unde
 
 			{
 				"ambientDependencies": {
-					"es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd",
-					"jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
+					"es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",
+					"jasmine": "registry:dt/jasmine#2.2.0+20160412134438"
 				}
 			}
 
